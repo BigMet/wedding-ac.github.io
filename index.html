@@ -8,6 +8,13 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
@@ -98,11 +105,12 @@ body {
 }
 
 .curved-text-svg text {
-  font-family: 'Great Vibes', cursive; 
-  font-size: 26px;
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
   fill: #8e7341;
-  font-style: italic;
-  letter-spacing: 2px;
+  /* font-style: italic; */
+  letter-spacing: 1px;
 }
 
 /* ================= INVITO E CONTENUTI ================= */
@@ -175,14 +183,39 @@ body {
     margin-top: 10vh;
 }
 
+@font-face {
+  font-family: 'Amelia Giovani';
+  src: url('Font/AmeliaGiovaniRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* Reset per la frase accogliente */
 
 
 .frase-accogliente {
-  font-family: 'Great Vibes', cursive; 
+  /* font-family: 'Great Vibes', cursive;  */
+  font-family: 'Libre Baskerville', serif;
+  /* font-family: 'Amelia Giovani', serif; */
   padding-top: 0 !important;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 15px;
+  color: #6f5f4f;
+  line-height: 1.2;
+
+
+}
+
+.frase-accogliente2 {
+  /* font-family: 'Great Vibes', cursive;  */
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Amelia Giovani', serif;
+  font-weight: 450;
+  padding-top: 0 !important;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
 
 @media (min-width: 768px) {
@@ -194,13 +227,24 @@ body {
   }
 }
 
-.nomi{ 
-  font-family: 'Great Vibes', cursive; 
-  font-size: clamp(40px, 12vw, 56px); 
-  margin-bottom: 25px; 
-  line-height: 1.1;
-  color: #8e7341;
+
+
+.nomi {
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Bodoni Moda', cursive; */
+    font-family: 'Cormorant Garamond', serif;
+    /* font-family: 'Libre Baskerville', serif; */
+    font-size: clamp(40px, 8vw, 56px);
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    margin-bottom: 25px;
+    line-height: 1.1;
+    color: #8e7341;
+    letter-spacing: 3px;
 }
+
+
+
 
 /* .data{ font-size:18px; margin-bottom:20px; text-transform: uppercase; letter-spacing: 1.5px; } */
 
@@ -219,7 +263,8 @@ body {
 
 .giorno,
 .mese {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Libre Baskerville', serif;
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -227,24 +272,28 @@ body {
 }
 
 .numero {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Libre Baskerville', serif;
   font-size: 64px;
   font-weight: 500;
   line-height: 1;
 }
 
 .anno {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 3px;
   margin-top: 6px;
   opacity: 0.85;
 }
 
 .ora {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Libre Baskerville', serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
+  margin-bottom: 20px;
+
 }
 
 .giorno::after,
@@ -283,9 +332,10 @@ body {
 }
 
 .restano-solo {
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Libre Baskerville', serif;
   font-size: 20px;
-  font-style: italic;
+  /* font-style: italic; */
   color: #8e7341;
   margin-top: 10px;
   letter-spacing: 1px;
@@ -298,19 +348,27 @@ body {
   margin: 15px 0 30px;
 }
 
-.cd-item { text-align: center; }
-.cd-number { display: block; font-size: 22px; font-weight: 500; color: #8e7341; }
+.cd-item { 
+    text-align: center; 
+    font-family: 'Libre Baskerville', serif;
+    /* font-size: 20px; */
+    letter-spacing: 2px;
+    text-transform: uppercase;}
+
+.cd-number { display: block; font-size: 20px !important; font-weight: 500; color: #8e7341; }
 .cd-label { font-size: 16px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; }
 
 .location{ 
 font-size:18px; line-height:1.6; margin-bottom:10px; 
-font-family: 'Playfair Display', serif;
+/* font-family: 'Playfair Display', serif; */
+font-family: 'Libre Baskerville', serif;
 }
 .maps a{ display:inline-block; margin:15px 0 30px; font-size:24px; text-decoration:none; }
 
 .msg-conferma {
-  font-family: 'Great Vibes', cursive;
-  font-size: 28px;
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
   color: #6f5f4f;
   margin-top: 20px;
   line-height: 1.2;
@@ -364,7 +422,7 @@ font-family: 'Playfair Display', serif;
     <div class="envelope-left"></div>
     <div class="envelope-right"></div>
     <div id="wax-seal">
-      <img src="Images/sigilloInizialiRosso.png" alt="Sigillo">
+      <img src="Images/sigilloDoratoTest.png" alt="Sigillo">
       <svg class="curved-text-svg" viewBox="0 0 200 200">
         <defs><path id="curvePath" d="M 35,125 A 65,65 0 0,0 165,125" /></defs>
         <text><textPath xlink:href="#curvePath" startOffset="50%" text-anchor="middle">Clicca qui per aprire</textPath></text>
@@ -375,9 +433,11 @@ font-family: 'Playfair Display', serif;
 
 <section class="invito">
   <div class="contenuto">
-    <div class="frase-accogliente">Siamo felici di annunciarvi </br> il nostro matrimonio</div>
+    <div class="frase-accogliente">Con gioia <br>vi invitiamo a partecipare</div></br>
     
-    <br> <div class="nomi">Antonello Masala<br>&<br>Carmela Mastroianni</div>
+    <div class="frase-accogliente2"> the Wedding of:</div> 
+
+    <br> <div class="nomi">CARMELA MASTROIANNI<br>&<br>ANTONELLO MASALA</div>
 
     <div class="data-elegante">
     <div class="data-riga">
@@ -388,7 +448,7 @@ font-family: 'Playfair Display', serif;
 
       <div class="anno">2026</div>
     </br>
-      <div class="ora">Ore 18:00</div>
+      <div class="ora">Ore 17:30</div>
     </div>
 
     <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Matrimonio+Antonello+e+Carmela&dates=20260623T160000Z/20260623T220000Z&location=Tenuta+Klopé" target="_blank" class="btn-action">📅 Aggiungi al calendario</a>
@@ -403,7 +463,7 @@ font-family: 'Playfair Display', serif;
   </br>
     <div class="location">
       <strong>Tenuta Klopé</strong><br>
-      Strada Statale 19 delle Calabrie, Francavilla Angitola
+      Calabria
     </div>
     <div class="maps"><a href="https://maps.app.goo.gl/mpFc2jdsXFhVbtHX7" target="_blank">📍</a></div>
     
@@ -417,7 +477,7 @@ font-family: 'Playfair Display', serif;
 </section>
 
 <script>
-const targetDate = new Date("June 23, 2026 18:00:00").getTime();
+const targetDate = new Date("June 23, 2026 17:30:00").getTime();
 setInterval(() => {
   const now = new Date().getTime();
   const diff = targetDate - now;
